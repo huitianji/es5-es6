@@ -13,7 +13,7 @@
 //
 //func.call(obj);
 
-
+//TODO 这是箭头函数关键字的运用
 let obj = {
     id:"123",
     func1:function () {
