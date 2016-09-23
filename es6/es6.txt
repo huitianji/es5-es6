@@ -13,6 +13,8 @@ let  重复定义会报错
 let  预定义。预先解释   console.log(a);let a = "a"
 
 const  定义变量。不能修改
+
+const obj = {x:1,y:2}--引用类型  obj 他是一个地址 。。没有改变obj地址存在  obj.x = 4; console.log(obj)  => {x:4,y:2} --    如果是是这样 obj = {a:1} 就会报错 他是一个不能改的东西
 ------
 babel 编译写
 
@@ -39,6 +41,74 @@ this. 函数运行时候的上下文
 {}
 1:作用域
 2：定义对象
+
+
+//文字在计算机看到的是一张图片。一个画面。通过系统一个按钮渲染层一个画面。。画面比较占流量。。带宽不够用。就有了编码这个概念。。
+//传给你一片数字。-》然后解析完-》显示屏。画面。。
+//ascii码表  -- 0 --1  --   字节、位
+// 8个位置    2的8次方组合。。。存256种信息   第一个位是0
+// 拓展 ascii  第一位是1
+//中日韩文字比较复杂。  4个自己  。unicode--   2*32次方
+//utf8  主要用于网络传输。。减少带宽。。
+//
+//写的时候用  unicode /utf8
+
+//node+webpack  ===>reactnative
+
+//<!--reactnative-->
+//好处：公用同一套代码。改动方便
+//问题1：性能问题
+//ios 比 ad  性能好  。在底层封装了一层
+// art  模式    htm5调用的是浏览器的api
+
+//reactnative --  用了一个虚拟dom     ---  js操作dom的时候阻塞了。。  是异步阻塞的
+//facebook  -- 开发reactnative    调用系统级别的
+//dom是浏览器的api  webview的组件  浏览器的克子
+
+
+//白鹭引擎   业界比较火的引擎  -- 解决动画游戏问题  运行问题
+
+//vue  仅仅在浏览器上实现的机制
+v8是google   --解决js快慢的问题
+
+
+emoji  表情包
+console.log(emoji,emoji.length,emoji.codePointAt(0));
+let emoji = "\uD83d\uDE02"; //笑脸
+let es6EmojiCode = "\u{1f602}";
+emoji.charCodeAt(0);
+String.prototype.at || String.prototype.at = function () {
+}
+
+let es5Str = String.fromCharCode(0x1f602);
+let es6Str = String.fromCodePoint(0x1f602);
+
+
+Number.parseFloat
+
+
+//--
+let str = "javascript is the best language";
+let isFind = str.includes("s",5);
+let index = str.indexOf("s",5);
+console.log(isFind,index);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
