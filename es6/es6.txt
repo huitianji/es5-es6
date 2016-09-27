@@ -72,10 +72,14 @@ this. 函数运行时候的上下文
 v8是google   --解决js快慢的问题
 
 
-emoji  表情包
+emoji  表情包  一种字符。这种字符被编码到unicode里面，，苹果推这个推的的比较紧
+
 console.log(emoji,emoji.length,emoji.codePointAt(0));
 let emoji = "\uD83d\uDE02"; //笑脸
 let es6EmojiCode = "\u{1f602}";
+
+console.log(emoji,emoji.length,emoji.codePointAt(0));//  , 2,
+
 emoji.charCodeAt(0);
 String.prototype.at || String.prototype.at = function () {
 }
@@ -92,6 +96,71 @@ let str = "javascript is the best language";
 let isFind = str.includes("s",5);
 let index = str.indexOf("s",5);
 console.log(isFind,index);
+
+
+polyfill(兼容旧浏览器)
+
+
+/////////------------------------reactnative-----------------------//////
+
+html5应用替代原生的应用
+html5调用的浏览器的api  .  所以很慢。不是系统本身的的api
+迫使改动很小。又能在多个端运用，性能问题，调用的不是安卓 ios底层的api..
+安卓-apk  -》 转成二进制   ios 比安卓块
+
+安卓底层是用java写的一个环节
+
+。。慢的不是javascript 而是dom ,js操作dom的时候阻塞了。 是异步阻塞的。调用的是dom的api
+
+js的性能问题。靠reactnative解决
+reactnative：它是通过虚拟出一个dom。在内存里搞了一个虚拟的dom树。。
+
+
+业界比较火的。。。白鹭引擎。。javascript引擎  --  解决动画问题
+v8是google做的。。解决js快慢问题
+vue 虚拟的dom 在浏览器上的一个机制。。并没有在ios、安卓上实行。。
+
+..
+
+
+if --else  是逻辑。不是表达式
+
+es6+ react + nodecall
+
+
+
+、、、、、、、、、、、、、、、、、、、、
+//////////////////////////////---数组
+
+Array
+把类数组转化成数组
+
+
+//线性。 下标。0---1
+//非线性
+//对象不能转化成数组  是哈希的
+
+
+///promise  ->输入是一个function   ->输出是一个 实例
+
+
+//
+let p = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log(123);
+        resolve(123);
+    },1000);
+});
+
+p.then(() => {
+    console.log('sucss');
+}).catch(() => {
+});
+
+//有resolve的时候执行 then   /  reject的时候 执行 catch
+
+
+
 
 
 

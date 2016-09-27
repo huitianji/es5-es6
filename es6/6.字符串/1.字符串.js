@@ -13,3 +13,37 @@ let isFind = str.includes("s","5");
 let index = str.indexOf("s");
 console.log(isFind,index);//返回true  -- false;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

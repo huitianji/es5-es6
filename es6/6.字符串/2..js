@@ -5,4 +5,4 @@ let str = "javascript is the best language!";
 let [isStartWidth, isEndWidth]
     = [str.startsWith("s", 4), str.endsWith('!')];
 
-console.log()
+console.log(isStartWidth,isEndWidth);
