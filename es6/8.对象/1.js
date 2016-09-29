@@ -9,11 +9,11 @@ let obj = {
     c
 }
 function func() {
-    return {a,b,c};
+    return {a, b, c};
 }
 
 //console.log(func());
-let paras = "abc"
+let paras = "abc";
 let obj2 = {
     add: function () {
 
@@ -22,7 +22,7 @@ let obj2 = {
 
 let obj3 = {
     add () {
-        return 123;
+        return {a, b, c};
     }
 }
 console.log(obj3.add());

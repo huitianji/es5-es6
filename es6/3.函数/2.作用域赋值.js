@@ -8,4 +8,4 @@ function add(x,y) {
 }
 
 let res = add(1,2);
-console.log(res);
+console.log(res,x);//5

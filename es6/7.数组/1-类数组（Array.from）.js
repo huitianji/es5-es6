@@ -1,4 +1,4 @@
-//把类数组转化成数组
+//把类数组转化成数组   Array.from
 //同时也可以复制数组,引用类型的问题 --改变arr 也同时改变arr2
 //复制数组。。改变arr 也同时改变arr2
 //let arr = [1, 2, 3];
@@ -38,7 +38,7 @@ let arr2 = Array.from(arr);
 obj.c = "c";
 
 console.log(arr,arr2);
-
-let bdEle = document.querySelectorAll('body');
-
-let bdEle2 = Array.from(bdEle || []);
+//
+//let bdEle = document.querySelectorAll('body');
+//
+//let bdEle2 = Array.from(bdEle || []);

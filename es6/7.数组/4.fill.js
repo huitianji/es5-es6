@@ -17,4 +17,4 @@ let res2 = arr.findIndex((item, index,array) => {
     return item === 1;
 });
 
-console.log(res2);
+console.log(res,res2);
